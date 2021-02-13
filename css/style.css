@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    font-family: 'Bangers', cursive;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../files/img/bg.png');
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+::-webkit-input-placeholder {
+    color: #4A0036;
+    opacity: .5;
+}
+
+.design {
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+    background-color: rgba(250,250,250,0.8);
+    margin: auto;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+input:focus,
+button:focus {
+    outline: none !important;
+}
+
+input {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 20px 8px 20px;
+    text-indent: 15px;
+    color: #4A0036;
+    font-size: 15px;
+}
+
+.input-field img {
+    max-width: 20px;
+    position: absolute;
+    transform: translateX(10px);
+}
+
+
+
+/* ================================= LOGIN / REGISTER ========================================*/
+
+.register,
+.login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.register .topic,
+.login .topic {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.register .topic h1,
+.login .topic h1 {
+    color: #DC1162;
+    -webkit-text-stroke: 0.5px #4A0036;
+    font-size: 28px;
+    text-align: center;
+}
+
+.register .input-field,
+.login .input-field {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.register .reg-but,
+.login .log-but {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register .reg-but button,
+.login .log-but button {
+    border: none;
+    background-color: #DC1162;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.register .text,
+.login .text {
+    color: #4A0036;
+    font-size: 15px;
+    text-align: center;
+}
+
+.register .text p button,
+.login .text p button {
+    color: #DC1162;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+
+/* ====================================== MOVING BLOCK =================================== */
+
+.information {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+  	position: absolute;
+	transition: 0.6s;
+	border-radius: 15px;
+}
+
+.information {
+    position: absolute;
+    height: 100%;
+	width: 50%;
+    background-color: #1A1A1A;
+    box-shadow: 15px 0px 24px -7px rgba(26,26,26,1);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.information .logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.information .text-center {
+    display: flex;
+    justify-content: center;
+}
+
+.information .text {
+    width: 80%;
+    text-align: center;
+}
+
+.information .text p {
+    color: #DC1162;
+}
